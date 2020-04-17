@@ -1,6 +1,6 @@
 exo1 : 
-- OK 
-- pas de test
+- tests OK
+- fonctionnel
 
 exo2 : 
 - get_townhall_email OK

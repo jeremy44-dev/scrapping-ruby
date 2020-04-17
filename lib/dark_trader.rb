@@ -9,7 +9,7 @@ def get_cryptos()
     row = "/html/body/div/div/div[2]/div[1]/div[2]/div/div[2]/div[3]/div/table/tbody/tr[#{row_index}]"
     name = page.xpath(row + "/td[3]/div").text
     value = page.xpath(row + "/td[5]/a").text[1..-1].to_f # suppression du $
-    puts "#{name} : #{value}"
+    #puts "#{name} : #{value}"
 
     crypto = Hash.new
     crypto[name] = value
@@ -17,4 +17,8 @@ def get_cryptos()
   end
 
   return cryptos
+end
+
+if __FILE__ == $0
+  puts get_cryptos()
 end
