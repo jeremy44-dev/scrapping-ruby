@@ -17,7 +17,7 @@ describe "the get_townhall_urls function" do
   it "returns townhall complete urls" do
     region_url = "https://annuaire-des-mairies.com/val-d-oise.html"
     townhall_url_format = "https://annuaire-des-mairies.com/95/"
-    expect(get_townhall_urls(region_url)[0][0..39]).to eq(townhall_url_format)
+    expect(get_townhall_urls(region_url)[0][0..35]).to eq(townhall_url_format)
   end
 end
 
