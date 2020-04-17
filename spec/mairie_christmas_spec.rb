@@ -22,7 +22,7 @@ describe "the get_townhall_urls function" do
 end
 
 describe "the get_townhall_emails function" do
-  it "returns doesn't return empty email" do
+  it "doesn't return empty email" do
     region_url = "https://annuaire-des-mairies.com/val-d-oise.html"
     expect(get_townhall_emails(region_url).include? "").to eq(false)
   end

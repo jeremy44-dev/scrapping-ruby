@@ -1,6 +1,6 @@
 exo1 : 
 - tests OK
-- fonctionnel
+- get_cryptos OK
 
 exo2 :
 - tests OK
